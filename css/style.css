@@ -83,7 +83,11 @@ body {
 }
 
 #mc_embed_signup {
-	padding-top: 10px;
+	padding-top: 30px;
+}
+
+.row {
+	padding-bottom: 50px;
 }
 
 
