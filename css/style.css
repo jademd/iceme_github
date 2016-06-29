@@ -99,8 +99,6 @@ body {
 #footer {
 	background-color: black;
 	color: #aaaaaa;
-	padding-top: 1em;
-	padding-bottom: 1em;
 }
 
 	#footer a {
@@ -116,5 +114,6 @@ body {
 		font-size: 24px;
 	}
 
-
-
+	.social {
+		padding-top: 40px;
+	}
