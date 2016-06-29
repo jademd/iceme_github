@@ -42,7 +42,7 @@ body {
 }
 
 .spacer {
-	height: 8em;
+	height: 4em;
 
 }
 
@@ -82,8 +82,8 @@ body {
 
 }
 
-#mc_embed_signup {
-	padding-top: 30px;
+#mc_embed_signup input {
+	margin-top: 20px;
 }
 
 .row {
@@ -93,6 +93,7 @@ body {
 #mc-embedded-subscribe {
 	margin-left: 10px;
 }
+
 
 
 
