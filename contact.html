@@ -49,6 +49,24 @@
 							<a href="contact.html">Contact</a>	
 						</li>
 					</ul>
+
+
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+				
+				<ul class="nav navbar-nav navbar-right">
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suivez nous <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Twitter</a></li>
+						</ul>
+					</li>
+				</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
@@ -59,11 +77,33 @@
 			<div class="row">
 				<div class="col-sm-6">
 					
+					<div id="map" style="width: 100%; height: 400px;"></div>
+
+						<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+						<script type="text/javascript">
+							var myLatlng = new google.maps.LatLng(47.47093339999999,-0.5513820999999552);
+
+							var myOptions = {
+							zoom: 14,
+							center: myLatlng,
+							mapTypeId: google.maps.MapTypeId.ROADMAP,
+							styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+							};
+
+							var map = new google.maps.Map(document.getElementById('map'), myOptions);
+						    var marker = new google.maps.Marker({
+						    position: myLatlng,
+					        map: map,
+	   				        title: "You are here!"
+							});
+						</script>
+
 				</div>
 			    <div class="col-sm-6">
 			    	<h1>Contact</h1>
 			    	<p>
-			    		<i class="fa fa-map-marker"></i> 25 Rue du petit Musc
+			    		<i class="fa fa-map-marker"></i> 08 Place du Ralliement
 			    	</p>
 			    	<p>
 			    		<i class="fa fa-mobile"></i> 06 00 00 00 00
@@ -71,18 +111,8 @@
 				</div>
 			</div>
 		</div>
-		
-
-
-		<div class="spacer"></div>
 
 		
-
-		<div class="vertical-spacer"></div>
-
-		
-
-		<div class="vertical-spacer"></div>
 
 		<div id="footer">
 			<div class="container">
